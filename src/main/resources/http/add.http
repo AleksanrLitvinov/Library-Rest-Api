@@ -1,0 +1,9 @@
+POST localhost:8080/persons
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluMUBtYWlsLnJ1IiwiUm9sZSI6ImFkbWluIiwiTmFtZSI6IkFkbWluIiwiSWQiOjV9.nH_hB-f7UEdRdZ14M4tEtqghgg6zZVt-fpMP2Pp0MKg
+Content-Type: application/json
+
+{
+  "name": "user9",
+  "email": "user9@mail.ru",
+  "password" : "3333"
+}

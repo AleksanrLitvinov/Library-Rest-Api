@@ -1,0 +1,8 @@
+GET localhost:8080/auth/get-token
+Content-Type: application/json
+
+{
+  "email": "admin1@mail.ru",
+  "password" : "2222"
+}
+

@@ -1,0 +1,7 @@
+POST http://localhost:8080/persons/remove
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluMUBtYWlsLnJ1IiwiUm9sZSI6ImFkbWluIiwiTmFtZSI6IkFkbWluIiwiSWQiOjF9.7TSTjD2ulzPPICW30eWQuDRgmYkxf42TBGOo9WcRiZ0
+Content-Type: application/json
+
+{
+  "id": 2
+}
