@@ -25,8 +25,6 @@ public class SpringConfiguration {
 
     private final JwtFilter jwtFilter;
 
-//    это специальное Filter предложение, предоставляемое Spring Security,
-//    которое позволяет делегировать множество Filter экземпляров через SecurityFilterChain
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
@@ -41,13 +39,11 @@ public class SpringConfiguration {
                 .build();
     }
 
-//    Выдайте, AuthenticationException если он считает, что входные данные представляют собой недопустимый принципал.
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
-//    PasswordEncoder используется для одностороннего преобразования пароля, чтобы обеспечить его безопасное хранение.
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
